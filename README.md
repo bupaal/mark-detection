@@ -9,12 +9,25 @@ This project is a web-based application that extracts and validates student exam
 
   * Register Number, Course Code, Serial Number (from Exam Slip)
   * Serial Number, Question-wise Marks, Total Marks (from Mark Slip)
-* Validates total marks against individual question scores
-* Handles noisy data using:
+Serial Number-Based Mapping
 
-  * Regex cleanup
-  * Department code correction (e.g., fixes `CSC` to `CSE`)
-* Exports results to Excel
+Exam slips and marks slips are linked using the Serial Number
+
+Ensures accurate merging even if the order or count of pages differs
+
+Cleans and Normalizes Data
+
+Corrects malformed register numbers (e.g., fixes CH EN U4CSC23001 → CH.EN.U4CSE23001)
+
+Uses fuzzy logic to correct department codes (e.g., CSC → CSE)
+
+Strips extra characters and normalizes formats
+
+Excel Export
+
+Final matched data exported as Excel file
+
+Columns include Register Number, Serial Number, Course Code, Q1–Qn, Total Marks, and Match result
 
 ---
 
