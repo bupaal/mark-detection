@@ -6,4 +6,5 @@ PyPDF2
 chromadb
 faiss-cpu
 xlsxwriter
+pdf2image
 
