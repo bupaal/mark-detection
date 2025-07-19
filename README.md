@@ -23,14 +23,7 @@ This project is a web-based application that extracts and validates student exam
 
 ## Setup Instructions
 
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/bupaal/mark-detection.git
-cd mark-detection
-```
-
-### 2. Create Virtual Environment
+### 1. Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -38,7 +31,7 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Configure API Key
+### 2. Configure API Key
 
 Create a `.env` file in the root folder and add your Google API key:
 
@@ -46,7 +39,7 @@ Create a `.env` file in the root folder and add your Google API key:
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 streamlit run main.py
