@@ -15,7 +15,7 @@ This project is a web-based application that extracts and validates student exam
   * Corrects malformed register numbers (e.g., fixes CH EN U4CSC23001 → CH.EN.U4CSE23001)
   * Uses fuzzy logic to correct department codes (e.g., CSC → CSE)
   * Strips extra characters and normalizes formats
-*  Excel Export
+* Excel Export
   *  Final matched data exported as Excel file
   *  Columns include Register Number, Serial Number, Course Code, Q1–Qn, Total Marks, and Match result
 
